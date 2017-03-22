@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    Toast.makeText(this,"密度："+this.getResources().getDisplayMetrics().density,Toast.LENGTH_LONG).show();
         pinEntry = (PinEdit) findViewById(R.id.txt_pin_entry);
         if (pinEntry != null) {
             pinEntry.setPinBackgroundDrawable(getDrawable(com.jqjm.pinlibrary.R.drawable.gray_white));
